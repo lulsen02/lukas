@@ -1,5 +1,46 @@
 
-header{
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#flex-container > div {
+
+height: 600px;
+width: 1200px;
+background-color: blue;
+margin: 20px;
+line-height: 75px;
+font-size: 30px;
+
+}
+
+#button2{
+
+height: auto;
+width: auto;
+background-color: yellow;
+
+}
+
+nav{
+height: 100px;
+width: 1200px;
+background-color: red;
+margin: 20px;
+
+
+
+
+}
+
+
+
+
+/*header{
 background-color: blue;
 height: 150px;
 margin-left: auto;
@@ -11,7 +52,7 @@ grid-area: header;
 main{
 
   background-color: white;
-  height: 400px;
+  height: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,7 +60,7 @@ main{
 aside{
 
 background-color: blue;
-height: 400px;
+height: 700px;
 margin-left: auto;
 margin-right: auto;
 
@@ -27,18 +68,7 @@ margin-right: auto;
 
 footer{
   background-color: white;
-  height: 400px;
+  height: 700px;
   margin-left: auto;
   margin-right: auto;
-}
-
-#box{
-
-height: 300px;
-width: 200px;
-border: 1px solid;
-text-align: center;
-margin: 15px;
-background-color: yellow;
-
 }
