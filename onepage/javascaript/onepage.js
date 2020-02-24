@@ -1,21 +1,11 @@
 
 
-$("#button").click(function(){
-
-
-  $('html, body').animate({
-        scrollTop: $("#box").offset().top
-    }, 4000);
-
-
-
-});
 $("#button1").click(function(){
 
 
   $('html, body').animate({
-        scrollTop: $("#box1").offset().top
-    }, 4000);
+        scrollTop: $("header").offset().top
+    }, 1000);
 
 
 
@@ -24,8 +14,18 @@ $("#button2").click(function(){
 
 
   $('html, body').animate({
-        scrollTop: $("#box2").offset().top
-    }, 4000);
+        scrollTop: $("main").offset().top
+    }, 1000);
+
+
+
+});
+$("#button3").click(function(){
+
+
+  $('html, body').animate({
+        scrollTop: $("footer").offset().top
+    }, 1000);
 
 
 
