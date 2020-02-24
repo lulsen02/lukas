@@ -4,22 +4,17 @@
 header {
   grid-area: header;
   background-color: pink;
-  height: 500px;
-    width: 935px;
-    margin: 5px;
+
+
 }
 main {
   grid-area: main;
   background-color: blue;
-  height: 500px;
-  width: 935px;
-  margin: 5px;
+
 }
 aside {
   grid-area: sidebar;
   background-color: green;
-  height: 100%;
-  margin: 10px;
 
 
 
@@ -65,32 +60,37 @@ aside {
 footer {
   grid-area: footer;
   background-color: red;
-  height: 500px;
-    width: 935px;
-    margin: 5px;
 
+
+}
+body{
+margin:0px;
+height:300vh;
 
 }
 
 #wrapper {
+height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
-    " main main .sidebar "
+    " main main main sidebar "
     "footer footer footer sidebar";
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   #wrapper {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25% 25% 25% 25%;
+      grid-template-rows: auto;
     grid-template-areas:
-    "header"
-    "main"
-    "sidebar"
-    "footer";
+"sidebar sidebar sidebar sidebar "
+    "header header header header"
+    "main main main main"
+
+    "footer footer footer footer";
 
   }
 }
