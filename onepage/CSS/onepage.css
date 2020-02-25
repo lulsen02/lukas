@@ -10,7 +10,7 @@ header {
 }
 main {
   grid-area: main;
-  background-color: white;
+  background-color: blue;
   height: 500px;
   width: 935px;
   margin: 5px;
