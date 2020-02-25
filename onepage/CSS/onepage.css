@@ -1,12 +1,11 @@
 
 
-
 header {
   grid-area: header;
   background-color: pink;
-  height: 500px;
-    width: 935px;
-    margin: 5px;
+
+
+
 }
 
 #pic{
@@ -20,9 +19,9 @@ header {
 main {
   grid-area: main;
   background-color: blue;
-  height: 500px;
-  width: 935px;
-  margin: 5px;
+
+
+
 }
 
 #box1{
@@ -46,22 +45,19 @@ main {
 aside {
   grid-area: sidebar;
   background-color: green;
-  height: 100%;
-  margin: 10px;
-
-
+}
+footer {
+  grid-area: footer;
+  background-color: red;
 
 
 }
-
-
 
  #button1{
   height: 50px;
   width: 60px;
   background-color: red;
   position: fixed;
-  display: flex;
   margin: 10px;
 
 }
@@ -69,10 +65,9 @@ aside {
   height: 100px;
   width: 50px;
   background-color: black;
-  display: flex;
+
   position: fixed;
   margin: 10px;
-
 
 
 
@@ -80,118 +75,40 @@ aside {
 #button3{
   height: 50px;
   width: 50px;
-  background-color: black;
-  display: flex;
+  background-color: yellow;
+
   position: fixed;
   margin: 10px;
-
-
-
-}
-
-
-footer {
-  grid-area: footer;
-  background-color: red;
-  height: 500px;
-    width: 935px;
-    margin: 5px;
-
 
 }
 
 #wrapper {
+height:100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows:  33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
     " main main .sidebar "
     "footer footer footer sidebar";
 }
-@media only screen and (max-width: 1000px) {
+body{
+
+height:300vh;
+
+}
+
+@media only screen and (max-width: 700px) {
   #wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 5% 31% 31% 31%;
     grid-template-areas:
+  "sidebar"
     "header"
     "main"
-    "sidebar"
     "footer";
 
   }
-}
-
-
-/*
-#flex-container {
-  /* display: flex;
-  flex-direction: column;
-  padding: 16px; */
-/*  margin-left: 200px;
-
 
 }
-
-
-#flex-container > div {
-
-height: 800px;
-width: 1040px;
-
-background-color: blue;
-margin: 10px;
-line-height: 75px;
-font-size: 30px;
-
-}
-#button{
-
- height: 25px;
- width: 25px;
- background-color: yellow;
-}
-#button1{
-
- height: 25px;
- width: 25px;
- background-color: green;
-}
-
-
- #button2{
-
-height:25px ;
-width: 25px;
-background-color: red;
-
-}
-
-/*
-#wrapper{
-
- width: 100%;
-max-width: 1000px;
-margin-left: auto;
-margin-right: auto;
-
-} */
-
-
- /* main{
-background-color: pink;
-margin-right: 1040px;
-height: 100px;
-
-} */
-
-
-/*
-@media screen and(min-width: 768px) {
-
-
-}
-
-
-} */
