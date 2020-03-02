@@ -104,10 +104,10 @@ height:300vh;
     grid-template-columns: 100%;
     grid-template-rows: 5% 31% 31% 31%;
     grid-template-areas:
-  "sidebar"
-    "header"
-    "main"
-    "footer";
+  "sidebar "
+    "header "
+    "main "
+    "footer ";
 
   }
 
