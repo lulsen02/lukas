@@ -4,8 +4,6 @@ header {
   grid-area: header;
   background-color: pink;
 
-
-
 }
 
  /* #pic{
@@ -28,8 +26,6 @@ text-align: center;
 main {
   grid-area: main;
   background-color: blue;
-
-
 
 }
 
@@ -83,8 +79,6 @@ footer {
   position: fixed;
   margin: 10px;
 
-
-
 }
 #button3{
   height: 50px;
@@ -118,10 +112,17 @@ height:300vh;
     grid-template-columns: 100%;
     grid-template-rows: 5% 31% 31% 31%;
     grid-template-areas:
+ ruta2
   "sidebar sidebar sidebar sidebar"
     "header header header header"
     "main main main main"
     "footer footer footer footer";
+
+  "sidebar "
+    "header "
+    "main "
+    "footer ";
+ master
 
   }
 
