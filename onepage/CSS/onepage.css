@@ -4,14 +4,10 @@ header {
   grid-area: header;
   background-color: pink;
 
-
-
 }
 main {
   grid-area: main;
   background-color: blue;
-
-
 
 }
 aside {
@@ -41,8 +37,6 @@ footer {
   position: fixed;
   margin: 10px;
 
-
-
 }
 #button3{
   height: 50px;
@@ -61,7 +55,7 @@ height:100%;
   grid-template-rows:  33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
-    " main main .sidebar "
+    " main main main sidebar "
     "footer footer footer sidebar";
 }
 body{
