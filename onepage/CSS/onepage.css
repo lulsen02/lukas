@@ -31,20 +31,22 @@ main {
 
 #box1{
 
-  height: 50px;
-  width: 250px;
-  background-color: green;
   margin: 15px;
-  margin-left: auto;
-  margin-right: auto;
-text-align: center;
+  height: 180px;
+    width: 275px;
+    border: 1px solid;
+    background-color: white;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  text-align: center;
 }
 
 #box2{
 
-  height: 100px;
-  width: 250px;
-  background-color: red;
+  height: 200px;
+  width: 300px;
+  background-color: white;
   margin: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -67,6 +69,8 @@ footer {
   height: 50px;
   width: 60px;
   background-color: red;
+  top:200px;
+
   position: fixed;
   margin: 10px;
 
@@ -112,17 +116,11 @@ height:300vh;
     grid-template-columns: 100%;
     grid-template-rows: 5% 31% 31% 31%;
     grid-template-areas:
- ruta2
-  "sidebar sidebar sidebar sidebar"
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-
   "sidebar "
     "header "
     "main "
     "footer ";
- master
+
 
   }
 
