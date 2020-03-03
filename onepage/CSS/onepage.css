@@ -25,7 +25,7 @@ text-align: center;
 
 main {
   grid-area: main;
-  background-color: blue;
+  background-color: lightgrey;
 
 }
 
@@ -43,7 +43,7 @@ main {
 
 #box2{
 
-  height: 200px;
+  height: 280px;
   width: 300px;
   background-color: white;
   margin: 15px;
