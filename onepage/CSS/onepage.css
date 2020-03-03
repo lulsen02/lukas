@@ -5,15 +5,62 @@ header {
   background-color: pink;
 
 }
-main {
-  grid-area: main;
-  background-color: blue;
+
+ /* #pic{
+margin-left: auto;
+margin-right: auto;
+    width: 40%;
+
+ } */
+ #pic{
+height: 200px;
+  width: 350px;
+  border: 1px solid;
+  background-color: white;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
 
 }
+
+main {
+  grid-area: main;
+  background-color: lightgrey;
+
+}
+
 aside {
   grid-area: sidebar;
-  background-color: green;
+  background-color: lightgrey;
+  height: 100%;
+  margin: 10px;
 }
+
+#box1{
+
+  height: 180px;
+    width: 275px;
+    border: 1px solid;
+    background-color: white;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  text-align: center;
+}
+
+#box2{
+
+  height: 280px;
+  width: 300px;
+  background-color: white;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
+}
+
+
 footer {
   grid-area: footer;
   background-color: red;
@@ -43,27 +90,33 @@ padding-top: 30%;
 
  #button1{
   height: 50px;
-  width: 60px;
-  background-color: red;
+  width: 50px;
+  background-color: white;
   position: fixed;
+  display: flex;
+  top: 30px;
   margin: 10px;
 
 }
 #button2{
-  height: 100px;
+  height: 50px;
   width: 50px;
-  background-color: black;
+
+  background-color: white;
+  display: flex;
 
   position: fixed;
+  top: 90px;
   margin: 10px;
 
 }
 #button3{
   height: 50px;
   width: 50px;
-  background-color: yellow;
-
+  background-color: white;
+  display: flex;
   position: fixed;
+  top: 150px;
   margin: 10px;
 
 }
@@ -137,10 +190,11 @@ height:300vh;
     grid-template-columns: 100%;
     grid-template-rows: 5% 31% 31% 31%;
     grid-template-areas:
-  "sidebar"
-    "header"
-    "main"
-    "footer";
+  "sidebar "
+    "header "
+    "main "
+    "footer ";
+
 
   }
 
