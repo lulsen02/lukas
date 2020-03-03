@@ -17,7 +17,7 @@ main {
 }
 aside {
   grid-area: sidebar;
-  background-color: green;
+  background-color: lightgrey;
   height: 100%;
   margin: 10px;
 
@@ -30,19 +30,22 @@ aside {
 
  #button1{
   height: 50px;
-  width: 60px;
-  background-color: red;
+  width: 50px;
+  background-color: white;
   position: fixed;
   display: flex;
+  top: 30px;
+
   margin: 10px;
 
 }
 #button2{
-  height: 100px;
+  height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: white;
   display: flex;
   position: fixed;
+  top: 90px;
   margin: 10px;
 
 
@@ -52,9 +55,10 @@ aside {
 #button3{
   height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: white;
   display: flex;
   position: fixed;
+  top: 150px;
   margin: 10px;
 
 
