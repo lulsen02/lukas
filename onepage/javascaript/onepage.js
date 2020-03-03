@@ -38,7 +38,7 @@ $("#knapp2").show();
 $("#knapp1").show();
 
 
-$("#window").css("overflow", "hidden");
+ $("#window").css("overflow", "hidden");
 
 $("#knapp1").click(function(){ //höger
 console.log(x);
