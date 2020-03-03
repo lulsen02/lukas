@@ -61,16 +61,32 @@ text-align: center;
 }
 
 
-aside {
-  grid-area: sidebar;
-  background-color: green;
-}
 footer {
   grid-area: footer;
   background-color: red;
+  text-align: center;
 
 
 }
+
+ #karta{
+
+
+padding-top: 30%;
+
+
+}
+
+/* #karta iframe{
+
+  position: absolute;
+  width: 50%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+
+  margin-right: 60%;
+
+} */
 
  #button1{
   height: 50px;
@@ -102,6 +118,52 @@ footer {
   position: fixed;
   top: 150px;
   margin: 10px;
+
+}
+
+
+#window{
+
+height: 200px;
+width: 200px;
+
+
+
+}
+
+#pics{
+
+height: 200px;
+width: 900px;
+position: relative;
+
+
+}
+
+#knapp1{
+
+width: 100px;
+height: 50px;
+text-align: center;
+display: none;
+
+background-color: yellow;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+#knapp2{
+
+
+width: 100px;
+height: 50px;
+text-align: center;
+display: none;
+background-color: blue;
+  color: black;
+  border: 2px solid red;
+border-radius: 20px;
 
 }
 
