@@ -39,7 +39,7 @@ aside {
 
 #box1{
 
-  height: 180px;
+  height: 183px;
     width: 275px;
     border: 1px solid;
     background-color: white;
@@ -59,6 +59,8 @@ aside {
   margin-right: auto;
 text-align: center;
 }
+
+
 
 
 footer {
@@ -122,6 +124,7 @@ padding-top: 30%;
 }
 
 
+
 #window{
 
 height: 200px;
@@ -133,12 +136,21 @@ width: 200px;
 
 #pics{
 
-height: 200px;
+height: 500px;
 width: 900px;
 position: relative;
 
 
 }
+#pics2{
+
+height: 500px;
+width: 900px;
+position: relative;
+
+
+}
+
 
 #knapp1{
 
