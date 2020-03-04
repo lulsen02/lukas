@@ -44,12 +44,12 @@ $("#knapp1").click(function(){ //höger
 console.log(x);
       if (x>=2) {
 
-          $("#pics").animate({right:"0"});
+          $("#news1").animate({right:"0"});
           x=0;
               console.log(x);
       } else {
 
-          $("#pics").animate({right:"+=202"});
+          $("#news1").animate({right:"+=202"});
           x=x+1;
       }
       console.log(x);
@@ -59,11 +59,11 @@ $("#knapp2").click(function(){ // Vänster
 
 console.log(x);
   if (x>=1) {
-      $("#pics").animate({right:"-=202"});
+      $("#news1").animate({right:"-=202"});
       x=x-1;
 console.log(x);
   }else if (x <= 0){
-      $("#pics").animate({right:"+=404"});
+      $("#news1").animate({right:"+=404"});
       x = 2;
     }
     console.log(x);
