@@ -52,7 +52,7 @@ aside {
 #box2{
 
   height: 280px;
-  width: 300px;
+  width: 280px;
   background-color: white;
   margin: 15px;
 margin-left: auto;
@@ -138,8 +138,8 @@ padding-top: 30%;
 
 #window{
 
-height: 200px;
-width: 200px;
+  height: 550px;
+  width: 1300px;
 
 
 
@@ -195,7 +195,7 @@ border-radius: 20px;
 height:100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows:  15% 55% 30%;
+  grid-template-rows:  33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
     " main main main sidebar "
@@ -203,7 +203,7 @@ height:100%;
 }
 body{
 
-height:900vh;
+height:300vh;
 
 }
 
