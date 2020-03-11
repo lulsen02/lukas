@@ -1,13 +1,27 @@
 
 
+const loadingBar= document.getElementsByClassName
+('loading-bar')[0]
+setInterval(() => {
+const datorStyle= getDatorSyle()
+const width = parseFloat(datorStyle.getPropertyValue('--width')) || 0
+loadingBar.Style.setProperty('--width' ,width + .1)
+
+}, 5)
+
+$("#window2").css("margin-left", "auto");
+$("#window2").css("margin-right", "auto");
+
+$("#button1").show();
+$("#button2").show();
+$("#button3").show();
+
 $("#button1").click(function(){
 
 
   $('html, body').animate({
         scrollTop: $("header").offset().top
     }, 1000);
-
-
 
 });
 $("#button2").click(function(){
@@ -17,8 +31,6 @@ $("#button2").click(function(){
         scrollTop: $("main").offset().top
     }, 1000);
 
-
-
 });
 $("#button3").click(function(){
 
@@ -27,45 +39,53 @@ $("#button3").click(function(){
         scrollTop: $("footer").offset().top
     }, 1000);
 
-
-
 });
 
 var x=0;
 
-
 $("#knapp2").show();
 $("#knapp1").show();
 
+$("#window2").css("overflow", "hidden");
 
-$("#window").css("overflow", "hidden");
 
-$("#knapp1").click(function(){ //höger
-console.log(x);
+$("#knapp2").click(function(){ //höger
+
       if (x>=2) {
-
-          $("#pics").animate({right:"0"});
+          $("#bilder").animate({right:"0"});
+            $("#lådor").animate({right:"0"});
           x=0;
-              console.log(x);
       } else {
+          $("#bilder").animate({right:"+=305"});
+          $("#lådor").animate({right:"+=310"});
 
-          $("#pics").animate({right:"+=202"});
           x=x+1;
       }
       console.log(x);
 });
 
-$("#knapp2").click(function(){ // Vänster
+$("#knapp1").click(function(){ // Vänster
 
 console.log(x);
   if (x>=1) {
-      $("#pics").animate({right:"-=202"});
+      $("#bilder").animate({right:"-=300"});
+        $("#lådor").animate({right:"-=305"});
       x=x-1;
 console.log(x);
   }else if (x <= 0){
-      $("#pics").animate({right:"+=404"});
+      $("#bilder").animate({right:"+=600"});
+      $("#lådor").animate({right:"+=610"});
       x = 2;
     }
     console.log(x);
 
 });
+
+// const loadingBar= document.getElementsByClassName
+// ('loading-bar')[0]
+// setInterval(() => {
+// const datorStyle= getDatorSyle()
+// const width = parseFloat(datorStyle.getPropertyValue('--width')) || 0
+// loadingBar.Style.setProperty('--width' ,width + .1)
+//
+// }, 5)

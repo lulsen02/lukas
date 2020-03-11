@@ -1,10 +1,47 @@
 
-
-header {
-  grid-area: header;
-  background-color: pink;
+*,*::before, *::after{
+box-sizing: border-box;
 
 }
+
+header {
+  padding: 0;
+  margin: 0;
+  grid-area: header;
+  background-color: pink;
+}
+.loading-bar{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+width: 500px;
+height: 3em;
+background-color: black;
+border-radius: 1.5em;
+color: white;
+}
+
+.loading-bar::before{
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;;
+  left: .5em;
+  top: .5em;
+  bottom: .5em;
+  width:  calc(var(--width, 0)* 1%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color: darkblue;
+  border-radius: 1em;
+  padding: 1em;
+
+
+}
+
+
+
+
 
  /* #pic{
 margin-left: auto;
@@ -26,7 +63,8 @@ text-align: center;
 
 main {
   grid-area: main;
-  background-color: lightgrey;
+  background-color: purple;
+
 
 }
 
@@ -34,31 +72,9 @@ aside {
   grid-area: sidebar;
   background-color: lightgrey;
   height: 100%;
-  margin: 10px;
+
 }
 
-#box1{
-
-  height: 180px;
-    width: 275px;
-    border: 1px solid;
-    background-color: white;
-    margin: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  text-align: center;
-}
-
-#box2{
-
-  height: 280px;
-  width: 300px;
-  background-color: white;
-  margin: 15px;
-  margin-left: auto;
-  margin-right: auto;
-text-align: center;
-}
 
 
 footer {
@@ -94,6 +110,7 @@ padding-top: 30%;
   background-color: white;
   position: fixed;
   display: flex;
+  display: none;
   top: 30px;
   margin: 10px;
 
@@ -101,11 +118,10 @@ padding-top: 30%;
 #button2{
   height: 50px;
   width: 50px;
-
   background-color: white;
   display: flex;
-
   position: fixed;
+  display: none;
   top: 90px;
   margin: 10px;
 
@@ -116,48 +132,108 @@ padding-top: 30%;
   background-color: white;
   display: flex;
   position: fixed;
+  display: none;
   top: 150px;
   margin: 10px;
 
 }
+#window2{
+
+height: 450px;
+width: 300px;
 
 
-#window{
+}
+#bilder{
 
-height: 200px;
-width: 200px;
-
+   display: flex;
+  position: relative;
 
 
 }
 
-#pics{
+#bild{
+  height: 200px;
+  width: 500px;
+    margin: 15px;
+  text-align: center;
+}
+#bild2{
+  height: 200px;
+  width: 900px;
+    margin: 15px;
+  text-align: center;
 
-height: 200px;
-width: 900px;
-position: relative;
+}
+#bild3{
+  height: 200px;
+  width: 9000px;
+    margin: 15px;
+  text-align: center;
+}
 
+#lådor{
 
+display: flex;
+  position: relative;
+  height: 500px;
+  width: 920px;
+
+}
+
+#låda{
+  height: 180px;
+    width: 300px;
+    border: 1px solid;
+    background-color: white;
+    margin: 15px;
+  text-align: center;
+
+}
+#låda2{
+
+  height: 180px;
+    width: 300px;
+    border: 1px solid;
+    background-color: white;
+    margin: 15px;
+  text-align: center;
+}
+#låda3{
+
+  height: 180px;
+    width: 300px;
+    border: 1px solid;
+    background-color: white;
+    margin: 15px;
+  text-align: center;
+}
+
+#knappar{
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 245px;
 }
 
 #knapp1{
 
-width: 100px;
+width: 120px;
 height: 50px;
 text-align: center;
 display: none;
-
 background-color: yellow;
   color: black;
   border: 2px solid red;
   border-radius: 20px;
 
+
+
 }
 
 #knapp2{
 
-
-width: 100px;
+width: 120px;
 height: 50px;
 text-align: center;
 display: none;
@@ -166,12 +242,16 @@ background-color: blue;
   border: 2px solid red;
 border-radius: 20px;
 
+
 }
+
+
+
 
 #wrapper {
 height:100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 29% 29% 29% 13%;
   grid-template-rows:  33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
@@ -188,13 +268,12 @@ height:300vh;
   #wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 31% 31% 31%;
+    grid-template-rows: 7% 31% 31% 31%;
     grid-template-areas:
   "sidebar "
     "header "
     "main "
     "footer ";
-
 
   }
 
