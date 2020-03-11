@@ -49,15 +49,27 @@ $("#knapp1").show();
 $("#window2").css("overflow", "hidden");
 
 
+
+ $("#window").css("overflow", "hidden");
+
+
 $("#knapp2").click(function(){ //höger
+
 
       if (x>=2) {
           $("#bilder").animate({right:"0"});
             $("#lådor").animate({right:"0"});
+
+          $("#news1").animate({right:"0"});
+
           x=0;
       } else {
           $("#bilder").animate({right:"+=305"});
           $("#lådor").animate({right:"+=310"});
+
+
+
+          $("#news1").animate({right:"+=202"});
 
           x=x+1;
       }
@@ -68,6 +80,7 @@ $("#knapp1").click(function(){ // Vänster
 
 console.log(x);
   if (x>=1) {
+
       $("#bilder").animate({right:"-=300"});
         $("#lådor").animate({right:"-=305"});
       x=x-1;
@@ -75,6 +88,13 @@ console.log(x);
   }else if (x <= 0){
       $("#bilder").animate({right:"+=600"});
       $("#lådor").animate({right:"+=610"});
+=======
+      $("#news1").animate({right:"-=202"});
+      x=x-1;
+console.log(x);
+  }else if (x <= 0){
+      $("#news1").animate({right:"+=404"});
+
       x = 2;
     }
     console.log(x);
