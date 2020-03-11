@@ -138,19 +138,21 @@ background-color: white;
 }
 
  #karta{
-padding-top: 30%;
+   overflow: hidden;
+   padding-bottom: 30%;
+   position: relative;
+   height: 0;
+
 }
 
-/* #karta iframe{
+ #karta iframe{
 
-  position: absolute;
-  width: 50%;
-  padding-top: 30%;
-  padding-bottom: 30%;
-
-  margin-right: 60%;
-
-} */
+left :0;
+top: 0;
+height: 100%;
+width: 100%;
+position: absolute;
+}
 
  #button1{
   height: 50px;
@@ -221,7 +223,7 @@ border-radius: 20px;
 #wrapper {
 height:100%;
   display: grid;
-  grid-template-columns: 25% 25% 40% 10%;
+  grid-template-columns: 30% 30% 30% 10%;
   grid-template-rows:  33% 33% 33%;
   grid-template-areas:
     "header header header sidebar"
