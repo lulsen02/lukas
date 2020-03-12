@@ -86,14 +86,6 @@ position: relative;
 
 
 
-aside {
-  grid-area: sidebar;
-  background-color: lightgrey;
-  height: 100%;
-
-}
-
-}
 
 
 
@@ -243,7 +235,7 @@ width: 300px;
 
 
 }
-#bilder{
+/* #bilder{
 
 
 
@@ -366,7 +358,7 @@ background-color: blue;
 border-radius: 20px;
 
 
-}
+} */
 
 
 
