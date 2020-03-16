@@ -1,4 +1,4 @@
-
+/*
 
 const loadingBar= document.getElementsByClassName
 ('loading-bar')[0]
@@ -8,7 +8,7 @@ const width = parseFloat(datorStyle.getPropertyValue('--width')) || 0
 loadingBar.Style.setProperty('--width' ,width + .1)
 
 }, 5)
-
+*/
 $("#window2").css("margin-left", "auto");
 $("#window2").css("margin-right", "auto");
 
@@ -60,7 +60,7 @@ $("#knapp2").click(function(){ //höger
           $("#bilder").animate({right:"0"});
             $("#lådor").animate({right:"0"});
 
-          
+
 
           x=0;
       } else {

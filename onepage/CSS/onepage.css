@@ -94,19 +94,19 @@ footer {
 }
 
  #karta{
+   padding-top: 25%;
+margin-right: 60%;
 
-padding-top: 30%;
 
 }
 
- #karta iframe{
+  #karta iframe{
 
   position: absolute;
-  width: 50%;
-  padding-top: 30%;
-  padding-bottom: 30%;
+   width: 50%;
 
-  margin-right: 60%;
+
+
 
 }
 
@@ -147,7 +147,6 @@ padding-top: 30%;
 
 height: 450px;
 width: 300px;
-
 
 
 }
