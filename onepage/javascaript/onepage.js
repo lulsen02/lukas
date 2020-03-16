@@ -50,7 +50,7 @@ $("#window2").css("overflow", "hidden");
 
 
 
- $("#window").css("overflow", "hidden");
+
 
 
 $("#knapp2").click(function(){ //höger
@@ -60,7 +60,7 @@ $("#knapp2").click(function(){ //höger
           $("#bilder").animate({right:"0"});
             $("#lådor").animate({right:"0"});
 
-          $("#news1").animate({right:"0"});
+          
 
           x=0;
       } else {
@@ -69,7 +69,7 @@ $("#knapp2").click(function(){ //höger
 
 
 
-          $("#news1").animate({right:"+=202"});
+
 
           x=x+1;
       }
@@ -88,12 +88,6 @@ console.log(x);
   }else if (x <= 0){
       $("#bilder").animate({right:"+=600"});
       $("#lådor").animate({right:"+=610"});
-=======
-      $("#news1").animate({right:"-=202"});
-      x=x-1;
-console.log(x);
-  }else if (x <= 0){
-      $("#news1").animate({right:"+=404"});
 
       x = 2;
     }
