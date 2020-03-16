@@ -39,17 +39,6 @@ color: white;
 
 }
 
- #news1{
-
-height: 500px;
-width: 1000px;
-position: relative;
-
-
-
-
-
-
 
 
 
@@ -78,31 +67,11 @@ main {
 
 
 }
-/* #window{
-
-  height: 500px;
-  width: 1000px;
-  display: flex;
-
-
-
-} */
 
 
 
 
 
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> e0a58d4280939cf215820c6469d9dee82aa569ca
 
 aside {
   grid-area: sidebar;
@@ -182,17 +151,12 @@ width: 300px;
 
 
 }
-<<<<<<< HEAD
-#bilder{
-height: 500px;
-width: 900px;
-=======
+
 
 
 #bilder{
 display: flex;
 position: relative;
->>>>>>> e0a58d4280939cf215820c6469d9dee82aa569ca
 
 }
 
@@ -262,10 +226,6 @@ display: flex;
   margin-right: auto;
   height: 102px;
   width: 245px;
-<<<<<<< HEAD
-=======
-
->>>>>>> e0a58d4280939cf215820c6469d9dee82aa569ca
 }
 
 #knapp1{
@@ -294,10 +254,7 @@ background-color: blue;
   border: 2px solid red;
 border-radius: 20px;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e0a58d4280939cf215820c6469d9dee82aa569ca
 }
 
 
