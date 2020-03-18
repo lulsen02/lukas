@@ -26,7 +26,45 @@
         <img src="pictures/onepage.jpg" alt="obs">
       </div>
 
-      <div class="loading-bar" style="--width: 80" data-label="loading..."> </div>
+      <div class="loading-bar" style="--width: 15" data-label="loading..."> </div>
+  ,::before, ::after{
+  box-sizing: border-box;
+
+  }
+
+   header {
+    padding: 0;
+    margin: 0;
+    grid-area: header;
+    background-color: pink;
+  }
+    .loading-bar{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  width: 500px;
+  height: 3em;
+  background-color: black;
+  border-radius: 1.5em;
+  color: white;
+  }
+
+  .loading-bar::before{
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;;
+    left: .5em;
+    top: .5em;
+    bottom: .5em;
+    width:  calc(var(--width, 0) 1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background-color: darkblue;
+    border-radius: 1em;
+    padding: 1em;
+
+  }
 
 
     </header>
@@ -37,7 +75,7 @@
 
     <div id="bilder">
        <div id="bild">
-        <img src="pictures/redbull1.jpg" alt="bla bla">
+        <img src="pictures/makaroner.jpg" alt="bla bla">
       </div>
       <div id="bild2">
         <img src="pictures/redbull2.jpg" alt="bla bla">
