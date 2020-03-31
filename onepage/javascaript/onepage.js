@@ -1,14 +1,11 @@
-/*
-
-const loadingBar= document.getElementsByClassName
-('loading-bar')[0]
+const progressBar= document.getElementsByClassName('loading-bar')[0]
 setInterval(() => {
-const datorStyle= getDatorSyle()
-const width = parseFloat(datorStyle.getPropertyValue('--width')) || 0
-loadingBar.Style.setProperty('--width' ,width + .1)
+  const computedStyle= getComputedStyle(progressBar)
+  const width = parseFloat(computedStyle.getPropertyValue
+    ('--width')) || 0
 
 }, 5)
-*/
+
 $("#window2").css("margin-left", "auto");
 $("#window2").css("margin-right", "auto");
 

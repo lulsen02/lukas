@@ -1,16 +1,17 @@
 
-*,*::before, *::after{
+,::before, ::after{
 box-sizing: border-box;
 
 }
 
-header {
+ header{
   padding: 0;
   margin: 0;
   grid-area: header;
   background-color: pink;
 }
-.loading-bar{
+
+  .loading-bar{
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -29,16 +30,14 @@ color: white;
   left: .5em;
   top: .5em;
   bottom: .5em;
-  width:  calc(var(--width, 0)* 1%);
+  width:  calc(var(--width, 0) 1%);
   min-width: 2rem;
   max-width: calc(100% - 1em);
   background-color: darkblue;
   border-radius: 1em;
   padding: 1em;
 
-
 }
-
 
 
 
